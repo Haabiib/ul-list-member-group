@@ -1,0 +1,52 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul{
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+img{
+    width: 250px;
+    border-radius: 10px;
+
+}
+
+h1, h6{
+    text-align: center;
+}
+
+.date_time{
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    margin-top: 100px;
+}
+
+input{
+    
+    width: 450px;
+    height: 50px;
+    border-radius: 7px;
+    margin-bottom: 10px;
+}
+
+label{
+    font-size: 20px;
+}
+.validation{
+    display: flex;
+    justify-content: center;
+}
+
+button{
+    background-color: rgb(66, 236, 132);
+    font-size: 25px;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+}

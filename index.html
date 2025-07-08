@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our team</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1 style="margin: 20px;">OUR TEAM</h1>
+<ul>
+    <li><img src="Imges/testimonials-1.jpg" alt="">
+    <h1>T0wk1r</h1>
+    <h6>Web Developer</h6>
+    </li>
+    <li><img src="Imges/testimonials-2.jpg" alt="">
+    <h1>Mekdad</h1>
+    <h6>Front end Devoloper</h6>
+    </li>
+    <li><img src="Imges/testimonials-3.jpg" alt="">
+    <h1>Billa</h1>
+    <h6>Front end Devoloper</h6>
+    </li>
+    <li><img src="Imges/testimonials-4.jpg" alt="">
+    <h1>Maruf</h1>
+    <h6>Front end Devoloper</h6>
+    </li>
+
+</ul>
+
+    <div class="date_time">
+        <h3>Date and Time</h3>
+        <span id="date"></span>&nbsp; &nbsp; &nbsp;<span id="time"></span>
+    </div>
+
+<script> 
+    document.getElementById("date").innerHTML = new Date().toLocaleDateString();
+    setInterval(()=> document.getElementById("time").innerHTML = new Date().toLocaleTimeString());
+</script>
+</body>
+</html>

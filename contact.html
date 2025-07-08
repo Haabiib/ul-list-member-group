@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact_Form</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <h1 style="margin: 10px;">Form Validation</h1>
+    <div class="validation">
+        
+        <form action="">
+        
+        <label for="">Enter your Name :</label><br>
+        <input type="text" id="name" ><br>
+        <label for="">Enter your Cell :</label><br>
+        <input type="text" id="cell" ><br>
+        <label for="">Enter your Email :</label><br>
+        <input type="email" id="email"><br>
+        <button style="text-align: center;" onclick="valid()">Submit</button>
+    </form>
+    </div>
+
+    <script>
+
+        
+        function valid(){
+
+        var a = document.getElementById('name').value.trim();
+        var b = document.getElementById('cell').value.trim();
+        var c = document.getElementById('email').value.trim();
+
+
+            if(a =="" || b =="" || c =="")
+        {
+            window.alert('Invalid Input')
+        }
+        else{
+            window.alert('Valid Input')
+        }
+        }
+    </script>
+
+</body>
+</html>
